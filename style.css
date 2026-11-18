@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f7fc;
+    color: #252b40;
+}
+
+/* HEADER */
+
+header {
+    background: white;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 8%;
+}
+
+.header-content img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.college-name {
+    text-align: center;
+}
+
+.college-name h2 {
+    color: #173c78;
+    font-size: 25px;
+}
+
+.college-name p {
+    color: #666;
+    margin-top: 5px;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: #173c78;
+    padding: 16px;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ffc83d;
+}
+
+.menu-btn {
+    display: none;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 480px;
+    background: linear-gradient(
+        120deg,
+        #142d59,
+        #2879cb
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.welcome {
+    color: #ffd166;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #ffc83d;
+    color: #173c78;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+/* SECTIONS */
+
+.section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #173c78;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.section > p {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    width: 260px;
+    padding: 30px 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    color: #2879cb;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.7;
+}
+
+.emoji {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.department {
+    background: #eaf1fc;
+}
+
+/* NOTICE BOARD */
+
+.notice {
+    background: #fff;
+}
+
+.notice-item {
+    max-width: 600px;
+    background: #edf3ff;
+    padding: 17px;
+    margin: 12px auto;
+    border-left: 5px solid #2879cb;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.notice .btn {
+    margin-top: 20px;
+}
+
+/* EVENTS */
+
+.events {
+    background: #eaf1fc;
+}
+
+/* GDG */
+
+.gdg {
+    background: white;
+}
+
+.gdg img {
+    width: 130px;
+    height: 110px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.gdg .btn {
+    margin-top: 25px;
+}
+
+/* CONTACT */
+
+.contact {
+    background: #eaf1fc;
+}
+
+form {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 100%;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+#result {
+    color: green;
+    margin-top: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #142d59;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    line-height: 2;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width: 768px) {
+
+    .header-content {
+        padding: 12px;
+    }
+
+    .header-content img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .college-name h2 {
+        font-size: 16px;
+    }
+
+    .college-name p {
+        font-size: 10px;
+    }
+
+    nav {
+        text-align: right;
+        position: relative;
+    }
+
+    .menu-btn {
+        display: inline-block;
+        background: white;
+        color: #173c78;
+        border: none;
+        padding: 7px 12px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        background: #173c78;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        padding: 25px;
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart College Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="header-content">
+
+        <img src="images/clg-logo.jpeg" alt="College Logo">
+
+        <div class="college-name">
+            <h2>SMART COLLEGE PORTAL</h2>
+            <p>Learn • Innovate • Achieve</p>
+        </div>
+
+        <img src="images/dept-logo.jpeg" alt="Department Logo">
+
+    </div>
+
+    <nav>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#department">Department</a>
+            <a href="#services">Services</a>
+            <a href="#events">Events</a>
+            <a href="#gdg">GDG</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="welcome">WELCOME TO OUR DIGITAL CAMPUS</p>
+
+        <h1>Building Future Through Technology</h1>
+
+        <p>
+            A smart platform connecting students, teachers,
+            technology and opportunities.
+        </p>
+
+        <a href="#about" class="btn">Explore Website</a>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+
+    <h2>About Our College</h2>
+
+    <p>
+        Our college focuses on quality education, innovation,
+        technical skills and student development.
+
+        We provide opportunities for students to explore
+        technology, develop creative ideas and prepare
+        themselves for the future.
+    </p>
+
+</section>
+
+<!-- DEPARTMENT -->
+<section id="department" class="section department">
+
+    <h2>Department of Computer Science</h2>
+
+    <p>
+        Our department encourages students to develop
+        programming, technical and problem-solving skills.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Programming</h3>
+            <p>Learn C, Python, Java and Web Development.</p>
+        </div>
+
+        <div class="card">
+            <h3>Artificial Intelligence</h3>
+            <p>Explore AI, Machine Learning and emerging technologies.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cyber Security</h3>
+            <p>Understand digital security and data protection.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+
+    <h2>Student Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="emoji">📚</div>
+            <h3>Digital Library</h3>
+            <p>Access learning resources and study materials.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">📢</div>
+            <h3>Notice Board</h3>
+            <p>Stay updated with college announcements.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">📅</div>
+            <h3>Events</h3>
+            <p>Discover upcoming workshops and competitions.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🎓</div>
+            <h3>Student Support</h3>
+            <p>Find academic guidance and student information.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- NOTICE BOARD -->
+<section class="section notice">
+
+    <h2>Latest Announcements</h2>
+
+    <div id="noticeList">
+        <div class="notice-item">
+            <span>📢</span> Technical Workshop Registration
+        </div>
+
+        <div class="notice-item">
+            <span>📢</span> Project Exhibition Announcement
+        </div>
+
+        <div class="notice-item">
+            <span>📢</span> Coding Competition
+        </div>
+    </div>
+
+    <button class="btn" onclick="showNotice()">
+        View More Notices
+    </button>
+
+</section>
+
+<!-- EVENTS -->
+<section id="events" class="section events">
+
+    <h2>College Activities & Events</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Technical Fest</h3>
+            <p>Participate in coding, quizzes and technical events.</p>
+        </div>
+
+        <div class="card">
+            <h3>Workshops</h3>
+            <p>Improve your technical knowledge through workshops.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cultural Fest</h3>
+            <p>Showcase your creativity and talents.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- GDG -->
+<section id="gdg" class="section gdg">
+
+    <img src="images/gdg-logo.jpeg" alt="GDG Logo">
+
+    <h2>Google Developer Groups</h2>
+
+    <p>
+        GDG is a developer community where students and
+        developers learn, collaborate and explore Google
+        technologies through events and activities.
+    </p>
+
+    <a href="https://gdg.community.dev/"
+       target="_blank" class="btn">
+       Explore GDG
+    </a>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+
+    <h2>Contact Us</h2>
+
+    <p>Have a question? Send us a message.</p>
+
+    <form id="contactForm">
+
+        <input type="text"
+               id="name"
+               placeholder="Your Name"
+               required>
+
+        <input type="email"
+               id="email"
+               placeholder="Your Email"
+               required>
+
+        <textarea id="message"
+                  placeholder="Your Message"
+                  required></textarea>
+
+        <button type="submit" class="btn">
+            Send Message
+        </button>
+
+    </form>
+
+    <p id="result"></p>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <h3>SMART COLLEGE PORTAL</h3>
+
+    <p>Connecting Education with Technology</p>
+
+    <p>© 2026 Smart College Portal. All Rights Reserved.</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
